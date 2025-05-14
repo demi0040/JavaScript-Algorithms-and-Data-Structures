@@ -1,0 +1,135 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef1f5; /* Light grayish-blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    padding: 20px; /* Added padding for smaller screens */
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #ffffff; /* White main container */
+    padding: 30px 40px; /* Increased padding */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 450px; /* Max width for the container */
+}
+
+h1 {
+    color: #2c3e50; /* Dark blue-gray heading */
+    margin-bottom: 15px;
+    font-size: 1.8em; /* Larger heading */
+}
+
+.description {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 25px; /* More space below description */
+}
+
+.input-area {
+    margin-bottom: 20px; /* Space between input and results/buttons */
+}
+
+#user-input {
+    padding: 12px 15px; /* Increased padding */
+    margin-bottom: 15px;
+    border: 1px solid #ced4da; /* Lighter border */
+    border-radius: 6px; /* More rounded input field */
+    width: calc(100% - 30px); /* Adjust width considering padding */
+    font-size: 1em;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue glow on focus */
+    outline: none;
+}
+
+.buttons-area {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increased gap */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 6px; /* More rounded buttons */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500; /* Slightly bolder text */
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
+}
+
+button:active {
+    transform: translateY(1px); /* Slight press effect */
+}
+
+#check-btn {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+}
+
+#check-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#clear-btn {
+    background-color: #6c757d; /* Gray for clear button */
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: #545b62; /* Darker gray on hover */
+}
+
+#results-div {
+    margin-top: 20px;
+    font-size: 1.05em; /* Slightly larger result text */
+    min-height: 1.5em;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 6px;
+    word-wrap: break-word; /* Ensure long numbers wrap */
+}
+
+#results-div.valid {
+    color: #155724; /* Dark green for valid */
+    background-color: #d4edda; /* Light green background */
+    border: 1px solid #c3e6cb;
+}
+
+#results-div.invalid {
+    color: #721c24; /* Dark red for invalid */
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    #user-input {
+        width: calc(100% - 24px); /* Adjust for smaller padding */
+    }
+    button {
+        padding: 10px 20px;
+    }
+}
