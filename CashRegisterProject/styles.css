@@ -1,0 +1,105 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #1a237e; /* Dark blue */
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.input-area {
+    margin-bottom: 20px;
+}
+
+.input-area p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Important for width calculation */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+#change-due {
+    margin-top: 20px;
+    padding: 15px;
+    min-height: 60px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.cid-details {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.cid-details h3 {
+    margin-top: 0;
+    color: #343a40;
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 8px;
+}
+
+.cid-details pre {
+    white-space: pre-wrap; /* Allows wrapping */
+    word-wrap: break-word;
+    font-family: monospace;
+    font-size: 0.9em;
+    max-height: 150px;
+    overflow-y: auto;
+}
