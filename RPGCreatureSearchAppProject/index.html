@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RPG Creature Search</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <h1>RPG Creature Search</h1>
+
+            <div class="search-container">
+                <label for="search-input" class="sr-only"
+                    >Search by Creature Name or ID</label
+                >
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Enter Name or ID"
+                    required
+                />
+                <button id="search-button">Search</button>
+            </div>
+
+            <div class="output-area">
+                <div id="creature-card" class="creature-card">
+                    <div class="creature-info-header">
+                        <h2 id="creature-name"></h2>
+                        <p id="creature-id"></p>
+                    </div>
+                    <img id="creature-sprite" src="" alt="Creature Sprite" />
+
+                    <div class="creature-physical-details">
+                        <p id="weight"></p>
+                        <p id="height"></p>
+                    </div>
+
+                    <div id="types-container" class="types-container">
+                        <h3>Types:</h3>
+                        <div id="types">
+                            <!-- Type elements will be added here by JS -->
+                        </div>
+                    </div>
+
+                    <div id="stats-container" class="stats-container">
+                        <h3>Base Stats:</h3>
+                        <div class="stats-grid">
+                            <p>HP: <span id="hp"></span></p>
+                            <p>Attack: <span id="attack"></span></p>
+                            <p>Defense: <span id="defense"></span></p>
+                            <p>
+                                Special Attack:
+                                <span id="special-attack"></span>
+                            </p>
+                            <p>
+                                Special Defense:
+                                <span id="special-defense"></span>
+                            </p>
+                            <p>Speed: <span id="speed"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
